@@ -1,0 +1,50 @@
+body {
+display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: distribute;
+  justify-content: center;
+  background-image: url("../img/fondo6.jpg");
+  background-size: cover; 
+}
+tr td {padding: 10px; }
+
+tr td img {
+  width: 100px;
+  height: 150px;
+  border-radius: 10px;
+   border: solid #004594 2px;
+}
+.voltear {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s; }
+
+.contenedor {
+  position: relative;
+  width: 100px;
+  height: 150px;
+  z-index: 1; }
+
+.carta {
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d; }
+
+.aux {
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d; }
+
+.cara {
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden; }
+
+.cara.atras {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg); }
